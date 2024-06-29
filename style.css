@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa; /* Light gray background for overall page */
+    color: #333;
+    perspective: 1500px; /* Perspective for 3D effect */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    transform: rotateX(5deg); /* Rotate header slightly for 3D effect */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+    margin: 2em auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform-style: preserve-3d; /* Ensure child elements follow the 3D transforms */
+    transform: rotateX(-5deg); /* Rotate sections slightly for 3D effect */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+    transform: translateZ(50px); /* Move photo closer to the viewer for 3D effect */
+}
+
+#home {
+    background-color: #e8f0ff; /* Light blue background for home section */
+}
+
+#projects {
+    background-color: #f8f0e5; /* Light orange background for projects section */
+}
+
+#resume {
+    background-color: #e5f5e0; /* Light green background for resume section */
+}
+
+#skills {
+    background-color: #f0e5f5; /* Light purple background for skills section */
+}
+
+#contact {
+    background-color: #f5f0e5; /* Light cream background for contact section */
+}
+
+#projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects .project {
+    border: 1px solid #ddd;
+    margin: 1em;
+    padding: 1em;
+    width: 100%; /* Full width for responsive design */
+    max-width: 45%; /* Maximum width for individual project */
+    background-color: #fff; /* White background for projects */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transform: translateZ(25px); /* Move projects closer to the viewer for 3D effect */
+}
+
+#projects .project h3 {
+    color: #333;
+}
+
+#projects .project p {
+    color: #666;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    transform: translateZ(50px); /* Move contact form closer to the viewer for 3D effect */
+}
+
+#contact form input, #contact form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.7em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translateZ(50px); /* Move button closer to the viewer for 3D effect */
+}
+
+#contact form button:hover {
+    background-color: #444;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transform: rotateX(5deg); /* Rotate footer slightly for 3D effect */
+}
+
+/* Skills section */
+#skills canvas {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    background-color: #fff; /* Ensure canvas has a white background */
+    border-radius: 10px;
+    transform: translateZ(25px); /* Move skills chart closer to the viewer for 3D effect */
+}
